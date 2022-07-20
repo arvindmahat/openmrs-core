@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    agent { label 'build_java_11' }
+    tools {
+    maven 'M2_HOME'
+    }
     stages {
         stage('SourceCode') {
             steps {
