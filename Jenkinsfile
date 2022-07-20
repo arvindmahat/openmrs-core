@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'build_java_11' }
+    agent any
     tools {
     maven 'M2_HOME'
     }
