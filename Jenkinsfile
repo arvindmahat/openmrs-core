@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'build_java_11' }
+    agent any
     stages {
         stage('SourceCode') {
             steps {
